@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/activeadmin/activeadmin.git
-  revision: 95b4a71e8ec4536cf292d67071560acdf4160419
+  revision: f99081c0c3327c0d696e5190d0d31433a2eb79e4
   specs:
     activeadmin (1.0.0.pre1)
       arbre (~> 1.0, >= 1.0.2)
@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: git://github.com/plataformatec/simple_form.git
-  revision: 43dccaf1cc941b78337577fd4c154594b86f8635
+  revision: cdc1718b6a0ae2aa684a53108ecaa958b2f49bce
   specs:
     simple_form (3.1.0)
       actionpack (~> 4.0)
@@ -99,7 +99,7 @@ GEM
       has_scope (~> 0.6.0.rc)
       railties (>= 3.2, < 5)
       responders
-    jbuilder (2.3.0)
+    jbuilder (2.3.1)
       activesupport (>= 3.0.0, < 5)
       multi_json (~> 1.2)
     jquery-rails (3.1.3)
