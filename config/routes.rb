@@ -1,6 +1,12 @@
 Rails.application.routes.draw do
   
+
+  get 'topics/show'
+
+  get 'topics/create'
+
   resources :subjects
+  resources :resources
 
   root "subjects#index"
 
