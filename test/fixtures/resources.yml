@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  url: MyString
+  price_in_pence: 1
+  free: false
+  description: MyString
+  offline: false
+
+two:
+  title: MyString
+  url: MyString
+  price_in_pence: 1
+  free: false
+  description: MyString
+  offline: false
