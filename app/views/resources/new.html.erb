@@ -9,17 +9,11 @@
 			<%= f.text_field :title, label: 'Title?' %>
 			<%= f.url_field :url %>
 			<%= f.text_area :description, label: 'Description' %>
-			<%= f.form_group :free, label: { text: "Free or Paid" } do %>
-			  <%= f.radio_button :free, 0, label: "Free" %>
-			  <%= f.radio_button :free, 1, label: "Paid" %>
-			<% end %>
+			<%= f.check_box :free, label: 'Is it free?' %>
 			<%= f.text_field :price_in_pence, label: 'Price' %>
-			<%= f.form_group :offline, label: { text: "Avaible Offline" } do %>
-			  <%= f.radio_button :offline, 0, label: "Yes" %>
-			  <%= f.radio_button :offline, 1, label: "No" %>
-			<% end %>
+			<%= f.check_box :offline, label: 'Available offline?' %>
 					
-			<%= f.button :submit, value: 'Submit', class: 'btn-primary' %>
+			<%= f.button :submit, value: 'Submit', class: 'btn btn-primary' %>
 					
 		</div>
 			
