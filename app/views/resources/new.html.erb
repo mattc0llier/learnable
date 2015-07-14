@@ -1,2 +1,27 @@
-<h1>Resources#new</h1>
-<p>Find me in app/views/resources/new.html.erb</p>
+<br>
+<div class="container">
+	<%= bootstrap_form_for @resource do |f| %>
+
+		<%= hidden_field_tag :ask_id, params[:ask_id] %>
+			
+		<div class="input-group">
+
+			<%= f.text_field :title, label: 'Title?' %>
+			<%= f.url_field :url %>
+			<%= f.text_area :description, label: 'Description' %>
+			<%= f.form_group :free, label: { text: "Free or Paid" } do %>
+			  <%= f.radio_button :free, 0, label: "Free" %>
+			  <%= f.radio_button :free, 1, label: "Paid" %>
+			<% end %>
+			<%= f.text_field :price_in_pence, label: 'Price' %>
+			<%= f.form_group :offline, label: { text: "Avaible Offline" } do %>
+			  <%= f.radio_button :offline, 0, label: "Yes" %>
+			  <%= f.radio_button :offline, 1, label: "No" %>
+			<% end %>
+					
+			<%= f.button :submit, value: 'Submit', class: 'btn-primary' %>
+					
+		</div>
+			
+	<% end %>
+</div>

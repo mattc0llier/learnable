@@ -6,6 +6,7 @@ class ResourcesController < ApplicationController
   end
 
   def new
+    @resource = Resource.new
   end
 
   def create
