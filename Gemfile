@@ -51,7 +51,6 @@ end
 gem 'omniauth'
 gem 'omniauth-facebook', '~> 1.4.0'
 gem 'friendly_id', '~> 5.0.0'
-gem 'simple_form', '~> 3.1.0', github: 'plataformatec/simple_form'
 gem "figaro"
 gem 'cancancan'
 gem "koala", "~> 1.10.0rc"
