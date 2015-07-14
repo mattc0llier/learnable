@@ -8,5 +8,6 @@
 
 	subjects = Subject.create([{ title: 'Academic Studies In Education' },
 		{ title: 'Accounting' },
-		{ title: 'Adult Nursing' }
+		{ title: 'Adult Nursing' },
+		{ title: 'Cryptography' }
 	])
