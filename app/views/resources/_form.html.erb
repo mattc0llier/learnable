@@ -1,0 +1,22 @@
+<%= bootstrap_form_for @resource do |f| %>
+
+		<%= hidden_field_tag :ask_id, params[:ask_id] %>
+			
+		<div class="input-group">
+
+			<%= f.text_field :title, label: 'Title?' %>
+			<%= f.url_field :url %>
+			<%= f.text_area :description, label: 'Description' %>
+			<%= f.check_box :free, label: 'Is it free?' %>
+			<%= f.text_field :price_in_pence, label: 'Price' %>
+			<%= f.check_box :offline, label: 'Available offline?' %>
+			<%= f.text_field :location, label: 'Location' %>
+			<%= f.text_field :license, label: 'License' %>
+			<%= f.collection_select :difficulty, Resource.difficulties.map{ |dp| [dp.first, dp.first.humanize] }, :first, :second %>
+			<%= f.collection_select :content_type, Resource.content_types.map{ |dp| [dp.first, dp.first.humanize] }, :first, :second %>
+			
+			<%= f.button :submit, value: 'Submit', class: 'btn btn-primary' %>
+					
+		</div>
+			
+<% end %>

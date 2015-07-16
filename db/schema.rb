@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150713224024) do
+ActiveRecord::Schema.define(version: 20150715215045) do
 
   create_table "resources", force: true do |t|
     t.string   "title"
@@ -22,6 +22,10 @@ ActiveRecord::Schema.define(version: 20150713224024) do
     t.boolean  "offline"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "difficulty"
+    t.integer  "content_type"
+    t.string   "location"
+    t.string   "license"
   end
 
   create_table "subjects", force: true do |t|

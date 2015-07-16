@@ -5,5 +5,9 @@
 	<p>Free? <%= @resource.free %></p>
 	<p>£<%= @resource.price_in_pence %></p>
 	<p>Available offline? <%= @resource.offline %></p>
-	<p>Last upadated at <%= @resource.updated_at %></p>
+	<p>Last upadated <%= time_ago_in_words(@resource.updated_at) %> ago</p>
+	<p>Location <%= @resource.location %></p>
+	<p>Difficulty <%= @resource.difficulty %></p>
+	<p>Content type <%= @resource.content_type %></p>
+	<p>License <%= @resource.license %></p>
 </div>

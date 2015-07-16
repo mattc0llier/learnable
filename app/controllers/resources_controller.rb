@@ -30,6 +30,13 @@ class ResourcesController < ApplicationController
   end
 
   def update
+    if @resource.update(resource_params)
+      flash[:success] = "Thank you for updating your resource"
+      redirect_to resource_path(@resource)
+    else
+      flash[:error] = "not this time buddy, change it!"
+      render :edit
+    end
   end
 
   def destroy

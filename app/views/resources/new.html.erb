@@ -1,21 +1,4 @@
 <br>
 <div class="container">
-	<%= bootstrap_form_for @resource do |f| %>
-
-		<%= hidden_field_tag :ask_id, params[:ask_id] %>
-			
-		<div class="input-group">
-
-			<%= f.text_field :title, label: 'Title?' %>
-			<%= f.url_field :url %>
-			<%= f.text_area :description, label: 'Description' %>
-			<%= f.check_box :free, label: 'Is it free?' %>
-			<%= f.text_field :price_in_pence, label: 'Price' %>
-			<%= f.check_box :offline, label: 'Available offline?' %>
-					
-			<%= f.button :submit, value: 'Submit', class: 'btn btn-primary' %>
-					
-		</div>
-			
-	<% end %>
+	<%= render "form" %>
 </div>

@@ -1,6 +1,10 @@
 <div class="container">
 	<h1>Resources</h1>
 
+	<%= link_to "New resource", new_resource_path %>
+
+	<br>
+
 	<% @resources.each do |resource| %>
 		<p><%= link_to resource.title, resource_path(resource) %></p>
 	<% end %>
