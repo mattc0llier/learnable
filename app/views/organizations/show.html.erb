@@ -1,0 +1,10 @@
+<div class="container">
+	<h1><%= @organization.title %></h1>
+	<p>tag line</p>
+
+	<% @resources.each do |resource| %>
+		<h3><%= link_to resource.title, resource_path(resource) %></h3>
+
+
+	<% end %>
+</div>

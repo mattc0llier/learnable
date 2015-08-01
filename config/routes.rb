@@ -1,11 +1,8 @@
 Rails.application.routes.draw do
-  
 
-  get 'topics/show'
-
-  get 'topics/create'
-
+  resources :organizations
   resources :subjects
+  resources :topics
   resources :resources
 
   root "main#index"

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150719164114) do
+ActiveRecord::Schema.define(version: 20150801140230) do
 
   create_table "instructors", force: true do |t|
     t.string   "first_name"
@@ -40,6 +40,7 @@ ActiveRecord::Schema.define(version: 20150719164114) do
     t.integer  "content_type"
     t.string   "location"
     t.string   "license"
+    t.integer  "organization_id"
   end
 
   create_table "subjects", force: true do |t|
@@ -47,6 +48,16 @@ ActiveRecord::Schema.define(version: 20150719164114) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "taggings", force: true do |t|
+    t.integer  "topic_id"
+    t.integer  "resource_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "taggings", ["resource_id"], name: "index_taggings_on_resource_id"
+  add_index "taggings", ["topic_id"], name: "index_taggings_on_topic_id"
 
   create_table "topics", force: true do |t|
     t.string   "title"

@@ -1,1 +1,7 @@
-index
+<div class="container">
+	<h1>Topics</h1>
+
+	<% @topics.each do |topic| %>
+		<h4><%= link_to topic.title, topic_path(topic) %></h4>
+	<% end %>
+</div>

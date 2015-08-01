@@ -1,0 +1,7 @@
+<div class="container">
+	<h1>Organizations</h1>
+
+	<% @organizations.each do |o| %>
+		<h4><%= link_to o.title, organization_path(o) %></h4>
+	<% end %>
+</div>
