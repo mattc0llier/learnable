@@ -44,7 +44,8 @@ class ResourcesController < ApplicationController
 
   private
   def resource_params
-    params.require(:resource).permit(:title, :url, :description, :price_in_pence, :free, :offline, :all_topics)
+    params.require(:resource).permit(:title, :url, :description, :price_in_pence, :free, :offline, 
+      :tag_list, :location, :license, :difficulty, :content_type)
   end
 
   def find_resource

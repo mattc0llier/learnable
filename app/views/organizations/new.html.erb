@@ -1,2 +1,14 @@
-<h1>Organizations#new</h1>
-<p>Find me in app/views/organizations/new.html.erb</p>
+<div class="container">
+	<%= bootstrap_form_for @organization do |f| %>
+				
+			<div class="input-group">
+
+				<%= f.text_field :title, label: 'Title?' %>
+				<br>
+				
+				<%= f.button :submit, value: 'Submit', class: 'btn btn-primary' %>
+						
+			</div>
+				
+	<% end %>
+</div>

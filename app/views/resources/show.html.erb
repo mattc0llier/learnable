@@ -10,4 +10,5 @@
 	<p>Difficulty <%= @resource.difficulty %></p>
 	<p>Content type <%= @resource.content_type %></p>
 	<p>License <%= @resource.license %></p>
+	Topics: <%= raw @resource.topics.map { |t| link_to t.title, topic_path(t) }.join(', ') %>
 </div>

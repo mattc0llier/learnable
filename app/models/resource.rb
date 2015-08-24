@@ -12,5 +12,13 @@ class Resource < ActiveRecord::Base
   		Topic.find_by_title!(title).resources
 	end
 
+	def tag_list
+ 		topics.map(&:title).join(", ")
+	end
 
+	def tag_list=(titles)
+  		self.topics = titles.split(",").map do |n|
+    	Topic.where(title: n.strip).first_or_create!
+    	end
+  	end
 end
