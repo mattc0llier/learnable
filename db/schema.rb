@@ -32,7 +32,7 @@ ActiveRecord::Schema.define(version: 20150807083301) do
     t.string   "url"
     t.integer  "price_in_pence"
     t.boolean  "free"
-    t.string   "description"
+    t.text     "description"
     t.boolean  "offline"
     t.datetime "created_at"
     t.datetime "updated_at"

@@ -5,7 +5,7 @@ class CreateResources < ActiveRecord::Migration
       t.string :url
       t.integer :price_in_pence
       t.boolean :free
-      t.string :description
+      t.text :description
       t.boolean :offline
 
       t.timestamps
