@@ -6,7 +6,7 @@ class TopicsController < ApplicationController
   end
 
   def show
-  	
+  	@resources = @topic.resources
   end
 
   def create

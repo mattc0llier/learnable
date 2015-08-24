@@ -14,7 +14,6 @@
 			<%= f.text_field :license, label: 'License' %>
 			<%= f.collection_select :difficulty, Resource.difficulties.map{ |dp| [dp.first, dp.first.humanize] }, :first, :second %>
 			<%= f.collection_select :content_type, Resource.content_types.map{ |dp| [dp.first, dp.first.humanize] }, :first, :second %>
-
   			<%= f.text_field :tag_list %>
 			
 			<%= f.button :submit, value: 'Submit', class: 'btn btn-primary' %>

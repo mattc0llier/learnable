@@ -1,3 +1,7 @@
 <div class="container">
 	<h1><%= @topic.title %></h1>
+
+	<% @topic.resources.each do |r| %>
+		<h3><%= link_to r.title, resource_path(r) %></h3>
+	<% end %>
 </div>
