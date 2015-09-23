@@ -3,14 +3,21 @@
 
 $navbar-default-bg: #fff
 $navbar-default-border: #fff
+$navbar-height: 90px
+$navbar-default-link-color: #309BB0
+$link-color: #ffffff
+$link-hover-decoration: none
 $gray-base: #4c4c4c
-$font-family-sans-serif: "Open Sans", Open Sans, sans-serif
 $headings-font-family: "Lato", Lato, sans-serif
+$font-family-sans-serif: "Open Sans", Open Sans, sans-serif
 $btn-primary-bg: #309BB0
 $btn-primary-border: #309BB0
 
 
 @import "bootstrap"
+
+body  
+  padding-top: 10px 
 
 .section
   clear: both
@@ -18,6 +25,9 @@ $btn-primary-border: #309BB0
   position: relative
 
 .section.main
+  background-color: #ffffff
+
+.section.first
   background-color: #309BB0
   text-align: center
   color: #fff
@@ -51,7 +61,7 @@ $btn-primary-border: #309BB0
   background-color: #ffffff
   border-color: #ffffff
   text-align: center
-  color: #000000
+  link-color: #000000
 
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files

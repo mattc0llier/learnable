@@ -1,66 +1,137 @@
 <div class="container">
 
+<section class="section main">
   <div class="jumbotron">
     <h1>Indexing the learnable web</h1>
-    <p>A free and open source database for all educational content</p>
+    <p>A free and open source database for all educational content, sorted by topic.</p>
     <%= link_to "Submit a Resource", new_resource_path, class: 'btn btn-primary' %>
     <%= link_to "Submit an Organization", new_organization_path, class: 'btn btn-primary' %>
   </div>
-	
+</section>
 </div>
 
-<section class="section main">
+<section class="section first">
   <div class="container">
-      <p class="lead">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-      <footer>- Arcamedies in <cite title="Source Title">Smack your bith up</cite></footer>
+      <h4 class="lead">Edudex is a project that indexes educational content based on the topics covered. There are limitless ways to learn something new, but the topic always stays the same. Learning about jQuery could be a physical class, a digital MOOC or a blog post from an expert in the field. Eventually Edudex should be a living breathing index of the how the world is teching knowledge. Edudex is a non-profit, open source project creating the infrastructure for educational innovation to flourish.</h4>
   </div>
 </section>
 
 <section class="section second">
-  <h1>London code schools</h1>
-  <p>These shold be white Logos</p>
+  <div class="container">
+  <h1>Web Developer Topics</h1>
   <div class="row">
-    <div class="col-md-4"><h2><%= link_to 'Steer', '/organizations/1' %></h2></div>
-    <div class="col-md-4"><h2><%= link_to "Maker's Academy", '/organizations/3' %></h2></div>
-    <div class="col-md-4"><h2><%= link_to 'Decoded', '/organizations/2' %></h2></div>
+    <div class="col-md-4">
+      <h2><%= link_to "Xcode", '/topics/11' %></h2>
+    </div>
+    <div class="col-md-4">
+      <h2><%= link_to "JavaScript", '/topics/63' %></h2>
+    </div>
+    <div class="col-md-4">
+      <h2><%= link_to "GitHub", '/topics/21' %></h2>
+    </div>
   </div>
+</div>
+</section>  
+
+<section class="section second">
+  <div class="container">
+  <h1><%= link_to "Code schools in London", organizations_path("?ref=London") %></h1>
+  <br>
+  <br>
+  <div class="row">
+    <div class="col-md-4">
+      <h2><%= link_to (image_tag("decoded.png")), '/organizations/1' %></h2>
+    </div>
+    <div class="col-md-4">
+      <h2><%= link_to (image_tag("decoded.png")), '/organizations/3' %></h2>
+    </div>
+    <div class="col-md-4">
+      <h2><%= link_to (image_tag("decoded.png")), '/organizations/2' %></h2>
+    </div>
+  </div>
+</div>
 </section>
 
 <section class="section third">
+  <div class="container">
  <h1>The Future</h1>
  <br>
  <div class="row">
   <div class="col-md-4">
     <%= image_tag("graph.png") %>
-    <p>Meta Data</p> 
+    <h4>A community maintained database of educational content. How does course location effect topics covered?</h4> 
   </div>
   <div class="col-md-4">
     <%= image_tag("api.png") %>
-    <p>Free API for all</p>
+    <h4>A Free API for all. What educational infrastructure could you build?</h4>
   </div>
   <div class="col-md-4">
     <%= image_tag("globe.png") %>
-    <p>Building a web ciriculum</p>
+    <h4>Building a web ciriculum. A live and evolving cirriculum of the world. Who is teaching what, where and how are they doing it?</h4>
+  </div>
   </div>
 </div>
 </section>
 
 <section class="section forth">
-  <h1>Our Supporters</h1>
-  <p>Maybe a little quote carousel here</p>
-  <p class="lead">"The most amazing site I have ever seen in all my time on the internet."</p>
-      <footer>- Arcamedies in <cite title="Source Title">Smack your bith up</cite></footer>
+  <div class="container">
+    <h1>Our Supporters</h1>
+    <br>
+    <br>
+    <div class="row">
+    <div class="col-md-2">
+      <%= image_tag "avatar.png" %>
+    </div>
+    <div class="col-md-4">
+      <p class="lead">"We have to start thinking differently to how we approach education, Edudex is the first step."</p>
+      <footer>
+        - Simon Peyton-Hewitt <cite title="Source Title">Inventor of Haskell</cite>
+      </footer>
+    </div>
+    <div class="col-md-2">
+      <%= image_tag "avatar.png" %>
+    </div>
+    <div class="col-md-4">
+      <p class="lead">"There are comprhensive sites for movies, but not yet for educational content"</p>
+      <footer>
+        - Col Needham <cite title="Source Title">Founder of IMDB.com</cite>
+      </footer>
+    </div>
+    </div>
+    <br>
+    <br>
+    <br>
+  <div class="row">
+    <div class="col-md-2">
+      <%= image_tag "avatar.png" %>
+    </div>
+    <div class="col-md-4">
+      <p class="lead">"The most amazing site I have ever seen in all my time on the internet."</p>
+      <footer>
+        - Sir Richard Branson <cite title="Source Title">Founder of Virgin</cite>
+      </footer>
+    </div>
+    <div class="col-md-2">
+      <%= image_tag "avatar.png" %>
+    </div>
+    <div class="col-md-4">
+      <p class="lead">"Education is killing creativity, technology with be the enabler for the next generation."</p>
+      <footer>
+        - Sir Ken Robinson <cite title="Source Title">Educational Thought Leader</cite>
+      </footer>
+    </div>
+  </div>
+  </div>
 </section>
 
 <section class="section fifth">
  <div class="container">
-  <div class="row">
                 <h1>Find out the latest</h1>
-                <p>Subscribe to our weekly Newsletter and stay tuned.</p>  
+                <h2>Subscribe to our weekly Newsletter and stay tuned.</h2>  
 
                 <form action="" method="post">
                         <input type="text" id="" name="" placeholder="your@email.com">
-                    </div>
+            
                     <br />
                     <input type="submit" value="Sign up" class="btn btn-primary" />
               </form>
@@ -71,9 +142,9 @@
   <div class="container">
     <p class="pull-left">Built by <a href="https://www.twitter.com/mollier_">Matt Collier</a></p> 
     <p class="pull-right">
-      <a href="https://www.twitter.com/mollier_">Twitter</a>
-      <a href="https://www.twitter.com/mollier_">Facebook</a>
-      <a href="https://www.twitter.com/mollier_">Instagram</a>
+      <a href="https://twitter.com/edudex">Twitter</a>
+      <a href="https://www.facebook.com/edudex">Facebook</a>
+      <a href="http://www.youtube.com/edudex">YouTube</a>
     </p> 
   </div>
 </footer>
