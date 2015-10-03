@@ -1,5 +1,5 @@
 <div class="container">
-	<h1><%= @topic.title %></h1>
+	<h1>I would like to learn about <font color="309BB0"><b><%= @topic.title %></b></font></h1>
 
 	<% @topic.resources.each do |r| %>
 		<h3><%= link_to r.title, resource_path(r) %> (<%= r.organization_id %>)</h3>
