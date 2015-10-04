@@ -1,14 +1,46 @@
 <div class="container">
-	<h1><%= @resource.title %></h1>
-	<p><%= link_to @resource.url, @resource.url %></p>
-	<p><%= @resource.description %></p>
-	<p>Free? <%= @resource.free %></p>
-	<p>£<%= @resource.price_in_pence / 100 %></p>
-	<p>Available offline? <%= @resource.offline %></p>
-	<p>Last upadated <%= time_ago_in_words(@resource.updated_at) %> ago</p>
-	<p>Location <%= @resource.location %></p>
-	<p>Difficulty <%= @resource.difficulty %></p>
-	<p>Content type <%= @resource.content_type %></p>
-	<p>License <%= @resource.license %></p>
-	Topics: <%= raw @resource.topics.map { |t| link_to t.title, topic_path(t) }.join(', ') %>
+	<div class="row">
+		<div class="col-md-6">
+			<h1><%= @resource.title %></h1>
+			<p><%= link_to @resource.url, @resource.url %></p>
+			<p><%= @resource.description %></p>
+		</div>
+		<div class="col-md-6 text-center">
+			Picture or video
+		</div>
+	</div>
 </div>
+<section class="section first">
+	<div class="container">
+	<div class="row">
+		<div class="col-md-4 text-center">
+			<h1><%= @resource.difficulty %></h1>
+		</div>
+		<div class="col-md-4 text-center">
+			<h1>1 day</h1>
+		</div>
+		<div class="col-md-4 text-center">
+			<h1>£<%= @resource.price_in_pence / 100 %></h1>
+		</div>
+	</div>
+	</div>
+</section>
+<section class="section second">
+	<div class="container">
+		<h3><%= raw @resource.topics.map { |t| link_to t.title, topic_path(t) }.join('  ') %></h3>
+	</div>
+</section>
+<section class="section third">
+	<div class="container">
+		<p>Free? <%= @resource.free %></p>
+		<p>£<%= @resource.price_in_pence / 100 %></p>
+		<p>Available offline? <%= @resource.offline %></p>
+		<p>Last upadated <%= time_ago_in_words(@resource.updated_at) %> ago</p>
+		<p>Location <%= @resource.location %></p>
+		<p>Difficulty <%= @resource.difficulty %></p>
+		<p>Content type <%= @resource.content_type %></p>
+		<p>License <%= @resource.license %></p>
+	</div>
+</section>
+	
+
