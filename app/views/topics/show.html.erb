@@ -24,16 +24,16 @@
 	<div class="row">
 		<% @topic.resources.each do |r| %>
 		<div class="col-md-6">
-			<h3><%= link_to r.title, resource_path(r) %> (<%= r.organization_id %>)</h3>
+			<h3><%= link_to r.title, resource_path(r) %></h3>
 		</div>
 		<div class="col-md-2">
-			<h3>Organization</h3>
+			<h3><%= r.organization_id %></h3>
 		</div>
 		<div class="col-md-2">
-			<h3>Location</h3>
+			<h3>London</h3>
 		</div>
 		<div class="col-md-2">
-			<h3>Difficulty</h3>
+			<h3>Beginner</h3>
 		</div>
 		<% end %>
 	</div>
