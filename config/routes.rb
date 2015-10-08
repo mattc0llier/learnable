@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   resources :topics
   resources :resources
 
+  get '/submit', to: 'main#submit'
+
   root "main#index"
 
   # The priority is based upon order of creation: first created -> highest priority.

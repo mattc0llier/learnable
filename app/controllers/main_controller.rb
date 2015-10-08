@@ -6,4 +6,8 @@ class MainController < ApplicationController
   def about
   end
 
+  def submit
+  	@organizations = Organization.all.order('title ASC')
+  end
+
 end
