@@ -1,10 +1,18 @@
-<div class="container">
+<div class="container text-center">
 	<h1><%= @organization.title %></h1>
 	<p>tag line</p>
+	<p>www.steer.me</p>
+</div>
 
+<section class="section first">
+<h1>Courses</h1>
 	<% @resources.each do |resource| %>
 		<h3><%= link_to resource.title, resource_path(resource) %></h3>
-
-
 	<% end %>
-</div>
+</section>	
+<section class="section second">
+	<h1>Other resources</h1>
+</section>
+<section class="section third">
+	<h1>Location</h1>
+</section>

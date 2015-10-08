@@ -6,7 +6,7 @@ class Resource < ActiveRecord::Base
 
 	enum difficulty: [ :beginner, :intermediate, :expert ]
 
-	enum content_type: [ :blog, :course, :video, :podcast ]
+	enum content_type: [ :blog, :course, :video, :podcast, :community ]
 
 	def self.tagged_with(title)
   		Topic.find_by_title!(title).resources
