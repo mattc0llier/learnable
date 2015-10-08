@@ -3,9 +3,11 @@
 				
 			<div class="input-group">
 
-				<%= f.text_field :title, label: 'Title?' %>
-				<br>
-	
+				<%= f.text_field :title, label: 'Title' %>
+				<%= f.text_field :tag_line, label: 'Tag Line' %>
+				<%= f.text_field :url, label: 'Official url' %>
+				<%= f.text_field :logo, label: 'Logo?' %>
+				
 				<%= f.button :submit, value: 'Submit', class: 'btn btn-primary' %>
 						
 			</div>
