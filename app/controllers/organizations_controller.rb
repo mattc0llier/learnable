@@ -11,6 +11,7 @@ class OrganizationsController < ApplicationController
 
   def new
     @organization = Organization.new
+    @organizations = Organization.all.order('title ASC')
   end
 
   def create

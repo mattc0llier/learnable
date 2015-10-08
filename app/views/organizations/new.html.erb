@@ -5,10 +5,16 @@
 
 				<%= f.text_field :title, label: 'Title?' %>
 				<br>
-				
+	
 				<%= f.button :submit, value: 'Submit', class: 'btn btn-primary' %>
 						
 			</div>
 				
+	<% end %>
+
+	<h3>Or submit a resource to an existing organization below:</h3>
+
+	<% @organizations.each do |o| %>
+		<h3><%= o.title %></h3>
 	<% end %>
 </div>

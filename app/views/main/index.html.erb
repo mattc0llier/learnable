@@ -17,11 +17,11 @@
 </section>
 
 <section class="section second">
-  <div class="container">
+  <div class="container text-center">
   <h1>Web Developer Topics</h1>
   <div class="row">
     <div class="col-md-4">
-      <h2><%= link_to "Xcode", '/topics/11' %></h2>
+      <h2><%= link_to "Responsive design", '/topics/131' %></h2>
     </div>
     <div class="col-md-4">
       <h2><%= link_to "JavaScript", '/topics/63' %></h2>
@@ -34,118 +34,21 @@
 </section>  
 
 <section class="section second">
-  <div class="container">
-  <h1><%= link_to "Code schools in London", organizations_path("?ref=London") %></h1>
+  <div class="container text-center">
+  <h1>Code schools in London</h1>
   <br>
   <br>
   <div class="row">
     <div class="col-md-4">
-      <h2><%= link_to (image_tag("decoded.png")), '/organizations/1' %></h2>
+      <h2><%= link_to "Steer", '/organizations/1' %></h2>
     </div>
     <div class="col-md-4">
-      <h2><%= link_to (image_tag("decoded.png")), '/organizations/3' %></h2>
+      <h2><%= link_to "Maker's Academy", '/organizations/3' %></h2>
     </div>
     <div class="col-md-4">
-      <h2><%= link_to (image_tag("decoded.png", height: '70', width: '250')), '/organizations/2' %></h2>
+      <h2><%= link_to "Decoded", '/organizations/2' %></h2>
     </div>
   </div>
 </div>
 </section>
 
-<section class="section third">
-  <div class="container">
- <h1>The Future</h1>
- <br>
- <div class="row">
-  <div class="col-md-4">
-    <%= image_tag("graph.png") %>
-    <h4>A community maintained database of educational content. How does course location effect topics covered?</h4> 
-  </div>
-  <div class="col-md-4">
-    <%= image_tag("api.png") %>
-    <h4>A Free API for all. What educational infrastructure could you build?</h4>
-  </div>
-  <div class="col-md-4">
-    <%= image_tag("globe.png") %>
-    <h4>Building a web ciriculum. A live and evolving cirriculum of the world. Who is teaching what, where and how are they doing it?</h4>
-  </div>
-  </div>
-</div>
-</section>
-
-<section class="section forth">
-  <div class="container">
-    <h1>Our Supporters</h1>
-    <br>
-    <br>
-    <div class="row">
-    <div class="col-md-2">
-      <%= image_tag "avatar.png" %>
-    </div>
-    <div class="col-md-4">
-      <p class="lead">"We have to start thinking differently to how we approach education, Edudex is the first step."</p>
-      <footer>
-        - Simon Peyton-Hewitt <cite title="Source Title">Inventor of Haskell</cite>
-      </footer>
-    </div>
-    <div class="col-md-2">
-      <%= image_tag "avatar.png" %>
-    </div>
-    <div class="col-md-4">
-      <p class="lead">"There are comprhensive sites for movies, but not yet for educational content"</p>
-      <footer>
-        - Col Needham <cite title="Source Title">Founder of IMDB.com</cite>
-      </footer>
-    </div>
-    </div>
-    <br>
-    <br>
-    <br>
-  <div class="row">
-    <div class="col-md-2">
-      <%= image_tag "avatar.png" %>
-    </div>
-    <div class="col-md-4">
-      <p class="lead">"The most amazing site I have ever seen in all my time on the internet."</p>
-      <footer>
-        - Sir Richard Branson <cite title="Source Title">Founder of Virgin</cite>
-      </footer>
-    </div>
-    <div class="col-md-2">
-      <%= image_tag "avatar.png" %>
-    </div>
-    <div class="col-md-4">
-      <p class="lead">"Education is killing creativity, technology with be the enabler for the next generation."</p>
-      <footer>
-        - Sir Ken Robinson <cite title="Source Title">Educational Thought Leader</cite>
-      </footer>
-    </div>
-  </div>
-  </div>
-</section>
-
-<section class="section fifth">
- <div class="container">
-                <h1>Find out the latest</h1>
-                <h2>Subscribe to our weekly Newsletter and stay tuned.</h2>  
-
-                <div class="form-group">
-                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-                </div>
-                <button type="submit" class="btn btn-default">Submit</button>
-              </form>
-</div>
-</section>
-
-
-<!-- want to make links in this section #2db168 -->
-<footer class="footer">
-  <div class="container">
-    <p class="pull-left">Built by <a href="https://www.twitter.com/mollier_"><%= image_tag "avatar.png" %></a></p> 
-    <p class="pull-right">
-      <a href="https://twitter.com/edudex"><%= image_tag "avatar.png" %></a>
-      <a href="https://www.facebook.com/edudex"><%= image_tag "avatar.png" %></a>
-      <a href="http://www.youtube.com/edudex"><%= image_tag "avatar.png" %></a>
-    </p> 
-  </div>
-</footer>
