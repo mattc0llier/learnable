@@ -49,7 +49,7 @@ group :production do
 end
 
 gem 'omniauth'
-gem 'omniauth-facebook', '~> 1.4.0'
+gem 'omniauth-twitter'
 gem 'friendly_id', '~> 5.0.0'
 gem "figaro"
 gem 'cancancan'
