@@ -2,15 +2,16 @@
   <div class="container">
     <div class="navbar-header col-md-12">
     	<%= link_to "Edudex", root_path, :class => "navbar-brand" %>
-    	<p class="navbar-text navbar-right pull-right"><%= link_to "Submit", '/submit' %>
-      <p class="navbar-text navbar-right pull-right"><%= link_to "Organizations", organizations_path %></p>
-      <p class="navbar-text navbar-right pull-right"><%= link_to "Topics", topics_path %></p>
-	  		<% if current_user %>
-		    	Signed in as <strong><%= current_user.name %></strong>!
+    	<p class="navbar-text navbar-right pull-right">
+    		<% if current_user %>
 		    	<%= link_to "Sign out", signout_path, id: "sign_out" %>
 		  	<% else %>
 		    	<%= link_to "Sign in with Twitter", "/auth/twitter", id: "sign_in" %>
 		 	 <% end %>
+		 	</p>
+      <p class="navbar-text navbar-right pull-right"><%= link_to "Organizations", organizations_path %></p>
+      <p class="navbar-text navbar-right pull-right"><%= link_to "Topics", topics_path %></p>
+
 
   </div>
 </nav>
