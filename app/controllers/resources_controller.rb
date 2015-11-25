@@ -16,7 +16,7 @@ class ResourcesController < ApplicationController
   def create
     @resource = Resource.new(resource_params)
     if @resource.save
-      flash[:success] = "New room"
+      flash[:success] = "New resource"
       redirect_to root_path
 
     else
@@ -45,7 +45,7 @@ class ResourcesController < ApplicationController
   private
   def resource_params
     params.require(:resource).permit(:title, :url, :description, :price_in_pence, :free, :offline, 
-      :tag_list, :location, :license, :difficulty, :content_type)
+      :tag_list, :location, :license, :difficulty, :content_type, :organization_id)
   end
 
   def find_resource

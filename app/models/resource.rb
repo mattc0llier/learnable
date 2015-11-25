@@ -1,6 +1,6 @@
 class Resource < ActiveRecord::Base
 
-	belongs_to :organizations
+	belongs_to :organization
 	has_many :tagging
 	has_many :topics, through: :tagging
 

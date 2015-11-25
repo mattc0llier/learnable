@@ -1,13 +1,12 @@
 <div class="container">
 	<div class="row">
-		<div class="col-md-6">
+		
 			<h1><%= @resource.title %></h1>
 			<p><%= link_to @resource.url, @resource.url %></p>
 			<p><%= @resource.description %></p>
-			<p><%= @resource.title %></p>
-		</div>
-		<div class="col-md-6 text-center">
-			Picture or video
+
+			<p>Content type <%= @resource.content_type %></p>
+			<p><%= @resource.organization_id %></p>
 		</div>
 	</div>
 </div>
@@ -21,7 +20,11 @@
 			<h1>1 day</h1>
 		</div>
 		<div class="col-md-4 text-center">
-			<h1>£<%= @resource.price_in_pence / 100 %></h1>
+			<% if @resource.free = true %>
+				<h1>FREE</h1>
+			<% else %>
+				<h1>£<%= @resource.price_in_pence / 100 %></h1>
+			<% end %>
 		</div>
 	</div>
 	</div>

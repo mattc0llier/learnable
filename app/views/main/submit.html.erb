@@ -5,6 +5,6 @@
 	<h3>Or submit a resource to an existing organization below:</h3>
 
 	<% @organizations.each do |o| %>
-		<h3><%= link_to o.title, new_resource_path(:organization_id => o) %></h3>
+		<h3><%= link_to o.title, new_resource_path(:organization_id => o.id) %></h3>
 	<% end %>
 </div>
