@@ -39,7 +39,7 @@
 			<h3><%= link_to r.content_type, resource_path(r) %></h3>
 		</div>
 		<div class="col-xs-2 text-center">
-			<h3>Beginner</h3>
+			<h3><%= link_to r.difficulty, resource_path(r) %></h3>
 		</div>
 		<% end %>
 	</div>
