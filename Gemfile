@@ -64,4 +64,4 @@ gem 'bootstrap-sass', '~> 3.3.1'
 gem 'autoprefixer-rails'
 gem 'bootstrap_form'
 
-ruby "2.2.1"
+ruby "2.3.1"
